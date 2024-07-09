@@ -1,0 +1,11 @@
+NOMBRE DEL CAMPO,TIPO DE DATO,NULL,KEY,DEFAULT,DESCRIPCIÓN
+fecha,date,no,,NULL,"Recibe la fecha, de CDMX, del evento usando el formato ""YYYY-MM-DD"""
+hora,time,no,,NULL,"Recibe la hora, de CDMX, del evento usando el formato ""HH:mm:SS"""
+latitud,float,no,,NULL,"Campo de tipo flotante que puede recibir n número de dígitos (en su mayoría está con 2 decimales, pero se han encontrado casos con 4)"
+longitud,float,no,,NULL,"Campo de tipo flotante que puede recibir n número de dígitos (en su mayoría está con 2 decimales, pero se han encontrado casos con 4)"
+profundidad,"decimal(5,1)",no,,NULL,"De los 5 dígitos que lo conforma, uno es para decimal, por lo que se puede considerar hasta desde 0 hasta 9999.9"
+magnitud,"decimal(3,1)",no,,NULL,"De los 5 dígitos que lo conforma, uno es para decimal, por lo que se puede considerar hasta desde 0 hasta 99.9"
+epicentro,varchar(100),no,,NULL,Puede recibir cualquier símbolo alfanumérico siempre y cuando sea menor o igual a 100 caracteres
+fechaUTC,date,no,,NULL,"Recibe la fecha, en UTC, del evento usando el formato ""YYYY-MM-DD"""
+horaUTC,time,no,,NULL,"Recibe la hora, de UTC, del evento usando el formato ""HH:mm:SS"""
+estatus,varchar(10),no,,verificado,Indica el estado del registro. Cuando este cambia a revisado es después de que los compañeros de análisis han realizado la revisión mensual y se ha actualizado la base.
